@@ -1,6 +1,6 @@
 {
   "name": "@mung-office/redux-socket",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "lib/index.js",
   "description": "redux and socket collaborator",
@@ -26,6 +26,6 @@
   },
   "author": "JeongTae Park <pjt3591oo@gmail.com> (https://github.com/pjt3591oo)",
   "license": "MIT",
-  "keywords": ["socket", "socket.io", "socketio", "react", "redux"],
+  "keywords": ["socket", "socket.io", "socketio", "react", "redux"]
   
 }

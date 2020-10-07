@@ -6,6 +6,8 @@
 $ npm install --save @mung-office/redux-socket
 ```
 
+[Sample](https://github.com/pjt3591oo/redux-socket-example) 보러가기
+
 ### redux - 리듀서 생성
 
 `store/modules/chat.ts`
