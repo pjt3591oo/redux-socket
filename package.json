@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "main": "lib/index.js",
+  "description": "redux and socket collaborator",
   "dependencies": {
     "@types/socket.io-client": "^1.4.34"
   },
@@ -21,8 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "the repositories url"
+    "url": "https://github.com/pjt3591oo/redux-socket"
   },
   "author": "JeongTae Park <pjt3591oo@gmail.com> (https://github.com/pjt3591oo)",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["socket", "socket.io", "socketio", "react", "redux"],
+  
 }
