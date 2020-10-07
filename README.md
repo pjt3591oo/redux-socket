@@ -1,6 +1,10 @@
 # redux-socket
 
-소켓/리듀서 합성
+* 설치
+
+```sh
+$ npm install --save @mung-office/redux-socket
+```
 
 ### redux - 리듀서 생성
 
@@ -92,7 +96,7 @@ const configureStore = () => {
 }
 
 
-// 루트 리듀서를 내보내주세요.
+// 루트 리듀서 내보내기
 export default configureStore();
 
 ```
@@ -107,7 +111,7 @@ import React from 'react'
 import { Provider as ReduxProvider } from "react-redux"
 import store from './store'
 
-import {Provider as ReduxSocketProvider} from 'redux_socket'
+import {Provider as ReduxSocketProvider} from '@mung-office/redux-socket'
 import socket from './socket'
 
 import ChatComponent from './components/chat'
@@ -133,7 +137,7 @@ export default App;
 `socket/index.ts`
 
 ```tsx
-import { Socket, Decorators } from 'redux_socket'
+import { Socket, Decorators } from '@mung-office/redux-socket'
 import { onAddChat } from '../store/modules/chat'
 
 class S extends Socket {
@@ -175,7 +179,7 @@ import React from 'react'
 import { Provider as ReduxProvider } from "react-redux"
 import store from './store'
 
-import {Provider as ReduxSocketProvider} from 'redux_socket'
+import {Provider as ReduxSocketProvider} from '@mung-office/redux-socket'
 import socket from './socket'
 
 import ChatComponent from './components/chat'
@@ -204,7 +208,7 @@ export default App;
 ```tsx
 import React, { useState, useContext } from "react"
 import { useSelector } from "react-redux"
-import  { ReactReduxSocketContext }  from "redux_socket"
+import  { ReactReduxSocketContext }  from "@mung-office/redux-socket"
 
 const ChatComponent = (props) => {
   let data:any = useSelector<any>(state => ({
