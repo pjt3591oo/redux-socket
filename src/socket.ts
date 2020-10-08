@@ -1,11 +1,3 @@
-import Provider from "./components/Provider";
-import Decorators from "./decorators"
-import {
-  useSocket
-} from "./hooks/useSocket";
-
-import ReactReduxSocketContext from './components/Context'
-
 import socketio from "socket.io-client";
 
 class Socket {
@@ -49,11 +41,4 @@ class Socket {
 
 }
 
-export {
-  Provider,
-  Socket,
-  useSocket,
-  Decorators,
-
-  ReactReduxSocketContext
-}
+export default Socket

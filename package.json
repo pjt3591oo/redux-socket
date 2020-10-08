@@ -1,11 +1,15 @@
 {
   "name": "@mung-office/redux-socket",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "type": "module",
   "main": "lib/index.js",
   "description": "redux and socket collaborator",
   "dependencies": {
-    "@types/socket.io-client": "^1.4.34"
+    "@types/socket.io-client": "^1.4.34",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "react": "^16.13.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -26,6 +30,11 @@
   },
   "author": "JeongTae Park <pjt3591oo@gmail.com> (https://github.com/pjt3591oo)",
   "license": "MIT",
-  "keywords": ["socket", "socket.io", "socketio", "react", "redux"]
-  
+  "keywords": [
+    "socket",
+    "socket.io",
+    "socketio",
+    "react",
+    "redux"
+  ]
 }
