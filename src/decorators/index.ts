@@ -1,7 +1,7 @@
-import { emmiter } from './emmiter'
+import { emitter } from './emitter'
 import { listener } from './listener'
 
 export default { 
-  emmiter,
+  emitter,
   listener
 }

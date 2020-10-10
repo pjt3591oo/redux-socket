@@ -146,26 +146,29 @@ class S extends Socket {
   @Decorators.listener()
   public receive(socket, store) {
     socket.on('/msg', (data) => {
-      console.log(data)
-      store.dispatch(onAddChat(data))
+      store.dispatch(onAddChat({
+        msg: data.msg.msg,
+        senderId: data.senderId
+      }))
     })
   }
 
-  public send(payload) {
-    let socket = super.getSocket()
-    let store = super.getStore()
-    
-    console.log(store)
-    socket.emit('/msg', payload)  
+  @Decorators.emitter("/msg")
+  public send(props) {
+    let [socket, store, payload] = props
+    console.log(payload)
   }
 
 }
 let s = new S("ws://localhost:4000")
 
 export default s
+
 ```
 
 `@Decorators.listener` 붙은 메서드들 자동으로 호출하여 리스너를 만들어준다.
+
+`@Decorators.emitter('event')` 해당 메서드 호출시 데코레디터를 통해 전달된 이벤트 발생 후 `[socker, store, payload]` 인자를 받는 함수를 호출한다.
 
 ### 소켓 - 컨텍스트 생성
 
